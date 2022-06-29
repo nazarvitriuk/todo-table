@@ -27,6 +27,9 @@
         hover
         :items="todos"></b-table>
     </b-col>
+    <b-col cols="12" class="mb-3" v-if="!totalRows">
+      <h5 class="text-center">Todos not found</h5>
+    </b-col>
   </div>
 </template>
 
